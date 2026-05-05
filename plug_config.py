@@ -36,12 +36,20 @@ care_teleicu_plug = Plug(
     configs={},
 )
 
+care_abdm_plug = Plug(
+    name="abdm",
+    package_name="git+https://github.com/10bedicu/care_abdm.git",
+    version="@develop",
+    configs={},
+)
+
 plugs = [
     gateway_device_plugin,
     camera_device_plugin,
     vitals_observation_device_plugin,
     scribe_plug,
-    care_teleicu_plug
+    care_teleicu_plug,
+    care_abdm_plug
 ]
 
 manager = PlugManager(plugs)
