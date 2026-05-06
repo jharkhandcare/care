@@ -39,7 +39,7 @@ care_teleicu_plug = Plug(
 care_abdm_plug = Plug(
     name="abdm",
     package_name="git+https://github.com/10bedicu/care_abdm.git",
-    version="@production",
+    version="@develop",
     configs={},
 )
 
